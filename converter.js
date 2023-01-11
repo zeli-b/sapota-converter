@@ -47,3 +47,23 @@ function zasok(string) {
 
     return string;
 }
+
+function lusimez(string) {
+    let consonants = ['g', 'k', 'n', 'd', 't', 'l', 'r', 'm', 'b', 'p', 's', "'", 'z', 'c', 'f', 'h'];
+    let vowels = ['a', 'y', 'e', 'o', 'u', 'w', 'i', 'ja', 'jy', 'je', 'jo', 'ju', 'va', 'vy', 've', 'vo', 'vi'];
+
+    for (let i = 0; i < consonants.length; i++) {
+        let consonant = String.fromCharCode(0xe116 + 0x11*i);
+        string = string.replaceAll(consonants[i], consonant);
+        for (let j = vowels.length-1; j >= 0; j--) {
+            if (vowels[j] === 'w') continue;
+            string = string.replaceAll(consonant + vowels[j], String.fromCharCode(0xe111 + 0x11*i + j));
+        }
+    }
+
+    for (let i = vowels.length-1; i >= 0; i--) {
+        string = string.replaceAll(vowels[i], String.fromCharCode(0xe100 + i));
+    }
+
+    return string;
+}
