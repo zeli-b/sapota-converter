@@ -1,27 +1,13 @@
 @font-face {
-    font-family: 'SapotaZemin';
+    font-family: 'SapotaWebfont';
     font-weight: regular;
-    src: url(res/SapotaZemin.otf) format('woff');
-    unicode-range: U+E000-E0BF;
-}
-
-@font-face {
-    font-family: 'SapotaZemin';
-    font-weight: bold;
-    src: url(res/SapotaZemin-Bold.otf) format('woff');
-    unicode-range: U+E000-E0BF;
-}
-
-@font-face {
-    font-family: 'Sapota';
-    font-weight: regular;
-    src: url(res/Sapota1.otf) format('woff');
+    src: url(res/Sapota1.ttf) format('woff');
     unicode-range: U+E000-E23F;
 }
 
 
 textarea {
-    font-family: 'Sapota', 'SapotaZemin', 'Pretendard', sans-serif !important;
+    font-family: 'SapotaWebfont', 'Pretendard', sans-serif !important;
     width: 100%;
     height: 10rem;
     font-size: 1.4rem;
