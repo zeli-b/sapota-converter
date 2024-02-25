@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'SapotaWebfont';
+    font-family: 'Sapota';
     font-weight: regular;
-    src: url(res/Sapota1.ttf) format('woff');
-    unicode-range: U+E000-E23F;
+    src: url(./res/Sapota.woff) format('woff');
+    unicode-range: U+E000-F8FF;
 }
 
 textarea {
-    font-family: 'SapotaWebfont', 'Pretendard', sans-serif !important;
+    font-family: 'Sapota', 'Pretendard', sans-serif !important;
     width: 100%;
     height: 10rem;
     font-size: 1.4rem;
