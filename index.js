@@ -5,7 +5,7 @@ let italicCheck;
 let keyboardLayout;
 
 function updateLayout(to) {
-    keyboardLayout.src = `./res/layouts/${to}.png`;
+    keyboardLayout.src = `./res/layouts/${to}.svg`;
 }
 
 function load() {
