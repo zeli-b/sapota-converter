@@ -40,8 +40,8 @@ function load() {
 function keyup() {
     if (languageSelect.value === 'Zemin') {
         textarea.value = zasok(textarea.value);
-    } else if (languageSelect.value === 'Lusimez') {
-        textarea.value = lusimez(textarea.value);
+    } else if (languageSelect.value === 'Rusimez') {
+        textarea.value = rusimez(textarea.value);
     }
 }
 

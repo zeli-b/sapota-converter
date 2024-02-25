@@ -48,7 +48,7 @@ function zasok(string) {
     return string;
 }
 
-function lusimez(string) {
+function rusimez(string) {
     let consonants = ['g', 'k', 'n', 'd', 't', 'l', 'r', 'm', 'b', 'p', 's', "x", 'z', 'c', 'f', 'h'];
     let vowels = ['a', 'y', 'e', 'o', 'u', 'w', 'i', 'ja', 'jy', 'je', 'jo', 'ju', 'va', 'vy', 've', 'vo', 'vi'];
 
