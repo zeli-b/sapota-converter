@@ -42,6 +42,8 @@ function keyup() {
         textarea.value = zasok(textarea.value);
     } else if (languageSelect.value === 'Rusimez') {
         textarea.value = rusimez(textarea.value);
+    } else if (languageSelect.value === 'Erang') {
+        textarea.value = erang(textarea.value);
     }
 }
 

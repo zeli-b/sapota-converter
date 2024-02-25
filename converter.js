@@ -67,3 +67,21 @@ function rusimez(string) {
 
     return string;
 }
+
+const erangLatin = '1234567890-qwertyuiopasdfghjklzxcvbnm,.!@#$%^&*()_QWERTYUIOPASDFGHJKLZXCVBNM<>';
+const erangErang = '';
+function erang(string) {
+    let result = '';
+    for (let i = 0; i < string.length; i++) {
+        let letter = string[i];
+        let index = erangLatin.indexOf(letter);
+
+        if (index === -1) {
+            result += letter;
+        } else {
+            result += erangErang[index];
+        }
+    }
+
+    return result;
+}
