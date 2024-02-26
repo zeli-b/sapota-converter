@@ -102,3 +102,28 @@ function uarnamala(string) {
 
     return result;
 }
+
+function tugjan(string) {
+    let result = '';
+    for (let i = 0; i < string.length; i++) {
+        let letter = string[i];
+
+        if ('A' <= letter && letter <= "Z") {
+            result += String.fromCharCode(letter.charCodeAt(0) + 0xe0c0 - 0x40);
+        } else if ('a' <= letter && letter <= "z") {
+            result += String.fromCharCode(letter.charCodeAt(0) + 0xe0e0 - 0x60);
+        } else if ('0' <= letter && letter <= '4') {
+            result += String.fromCharCode(letter.charCodeAt(0) + 0xe0db - 0x30);
+        } else if ('5' <= letter && letter <= '9') {
+            result += String.fromCharCode(letter.charCodeAt(0) + 0xe0fb - 0x35);
+        } else if (letter === '.') {
+            result += String.fromCharCode(0xe0c0);
+        } else if (letter === ',') {
+            result += String.fromCharCode(0xe0e0);
+        } else {
+            result += letter;
+        }
+    }
+
+    return result;
+}
