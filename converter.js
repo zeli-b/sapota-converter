@@ -85,3 +85,20 @@ function erang(string) {
 
     return result;
 }
+
+function uarnamala(string) {
+    let result = '';
+    for (let i = 0; i < string.length; i++) {
+        let letter = string[i];
+
+        if ('A' <= letter && letter <= "Z") {
+            result += String.fromCharCode(letter.charCodeAt(0) + 0xe240 - 0x40);
+        } else if ('a' <= letter && letter <= "z") {
+            result += String.fromCharCode(letter.charCodeAt(0) + 0xe2b0 - 0x60);
+        } else {
+            result += letter;
+        }
+    }
+
+    return result;
+}

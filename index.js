@@ -44,6 +44,8 @@ function keyup() {
         textarea.value = rusimez(textarea.value);
     } else if (languageSelect.value === 'Erang') {
         textarea.value = erang(textarea.value);
+    } else if (languageSelect.value === 'Uarnamala') {
+        textarea.value = uarnamala(textarea.value);
     }
 }
 
