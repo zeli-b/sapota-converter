@@ -45,6 +45,8 @@ function zasok(string) {
     }
 
     string = string.replaceAll("", String.fromCharCode(0xe0bf));
+    string = string.replaceAll("=", String.fromCharCode(0xe0a0));
+    string = string.replaceAll("=", String.fromCharCode(0xe0a1));
 
     return string;
 }
