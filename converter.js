@@ -43,7 +43,8 @@ function zasok(string) {
     for (let i = 0; i < string.length; i++) {
         result += ' ' + string.charCodeAt(i).toString(16);
     }
-    console.log(result);
+
+    string = string.replaceAll("", String.fromCharCode(0xe0bf));
 
     return string;
 }
