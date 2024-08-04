@@ -3,9 +3,17 @@ let textarea;
 let boldCheck;
 let italicCheck;
 let keyboardLayout;
+let extra;
 
+const extras = ["J'Hanáravîtézasospiqua"];
 function updateLayout(to) {
   keyboardLayout.src = `./res/layouts/${to}.svg`;
+
+  if (extras.indexOf(to) !== -1) {
+    extra.style.display = "";
+  } else {
+    extra.style.display = "none";
+  }
 }
 
 function load() {
@@ -14,6 +22,7 @@ function load() {
   boldCheck = document.querySelector("#bold");
   italicCheck = document.querySelector("#italic");
   keyboardLayout = document.querySelector("#keyboard-layout");
+  extra = document.querySelector("#extra");
 
   updateLayout(languageSelect.value);
   languageSelect.addEventListener("change", (e) => {
@@ -48,6 +57,8 @@ function keyup() {
     textarea.value = uarnamala(textarea.value);
   } else if (languageSelect.value === "Tugjan") {
     textarea.value = tugjan(textarea.value);
+  } else if (languageSelect.value === "J'Hanáravîtézasospiqua") {
+    textarea.value = hanaravitezasospiqua(textarea.value);
   }
 }
 
