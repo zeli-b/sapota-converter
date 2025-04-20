@@ -135,7 +135,7 @@ function luhari(string) {
     let result = '';
     for (let i = 0; i < string.length; i++) {
         if ('a' <= string[i] && string[i] <= 'z') {
-            let code = string.charCodeAt(i) - 96 + 0x2d0;
+            let code = string.charCodeAt(i) - 96 + 0xe2d0;
 
             let letter = String.fromCharCode(code);
     
