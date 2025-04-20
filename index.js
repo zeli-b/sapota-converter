@@ -48,6 +48,8 @@ function keyup() {
     textarea.value = uarnamala(textarea.value);
   } else if (languageSelect.value === "Tugjan") {
     textarea.value = tugjan(textarea.value);
+  } else if (languageSelect.value === "Luhari") {
+    textarea.value = luhari(textarea.value);
   }
 }
 
