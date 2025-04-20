@@ -130,3 +130,22 @@ function tugjan(string) {
 
     return result;
 }
+
+function luhari(string) {
+    let result = '';
+    for (let i = 0; i < string.length; i++) {
+        if ('a' <= string[i] && string[i] <= 'z') {
+            let code = string.charCodeAt(i) - 96 + 0x2d0;
+
+            let letter = String.fromCharCode(code);
+    
+            result += letter;
+        }
+        else
+        {
+            result += string[i];
+        }
+    }
+
+    return result;
+}
